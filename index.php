@@ -13,8 +13,8 @@
 
         $livro =new livro;
 
-        $livro->setTitulo("biblia");
-        $livro->setautor("diversos");
+        $livro->setTitulo("Biblia");
+        $livro->setautor("Diversos");
         $livro->setPaginas(942);
     ?>
 
