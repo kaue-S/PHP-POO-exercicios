@@ -1,9 +1,9 @@
 <?php
 
-    class livro {
+    class Livro {
         private string $titulo;
         private string $autor;
-        private int $paginas;
+        private int $paginas = 0;
 
         //Métodos getter/setters
 

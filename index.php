@@ -11,7 +11,7 @@
     <?php
         require_once "src/livro.php";
 
-        $livro =new livro;
+        $livro = new livro;
 
         $livro->setTitulo("Biblia");
         $livro->setautor("Diversos");
