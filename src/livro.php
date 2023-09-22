@@ -7,5 +7,22 @@
 
         //gerador de getters e setters
 
-        
+        public function getTitulo(): string
+        {
+                return $this->titulo;
+        }
+
+        /**
+         * Set the value of titulo
+         *
+         * @param string $titulo
+         *
+         * @return self
+         */
+        public function setTitulo(string $titulo): self
+        {
+                $this->titulo = $titulo;
+
+                return $this;
+        }
     }
