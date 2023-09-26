@@ -5,24 +5,28 @@
         private string $autor;
         private int $paginas = 0;
 
-        //gerador de getters e setters
-
-        public function getTitulo(): string
-        {
-                return $this->titulo;
-        }
-
-        /**
-         * Set the value of titulo
-         *
-         * @param string $titulo
-         *
-         * @return self
-         */
-        public function setTitulo(string $titulo): self
-        {
+        public function setTitulo(string $titulo) : void {
                 $this->titulo = $titulo;
-
-                return $this;
-        }
+            }
+            
+            public function setAutor(string $autor) : void {
+                $this->autor = $autor;
+            }
+    
+            public function setPaginas(int $paginas) : void {
+                $this->paginas = $paginas;
+            }
+    
+            public function getTitulo() : string {
+                return $this->titulo;
+            }
+    
+            public function getAutor() : string {
+                return $this->autor;
+            }
+    
+            public function getPaginas() : int {
+                return $this->paginas;
+            }
+    
     }
