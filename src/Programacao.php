@@ -8,10 +8,8 @@
                 return $this->area;
         }
 
-        public function setArea(string $area): self {
+        public function setArea(string $area): void {
                 $this->area = $area;
-
-                return $this;
         }
     }
 ?>
