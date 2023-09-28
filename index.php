@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 01 POO</title>
+    <title>Exercicio 02 POO</title>
 </head>
 <body>
 
-<h1>Exercicio 01 POO </h1>
+<h1>Exercicio 02 POO </h1>
     <?php
-        require_once "src/livro.php";
         require_once "src/Tecnico.php";
         require_once "src/Programacao.php";
         require_once "src/Didatico.php";
 
-        $livro = new livro;
-
-        $livro->setTitulo("Fundamentos html5 e CSS3");
-        $livro->setAutor("Maurício Samy Silva");
-        $livro->setPaginas(304);
-
-        $formato = new Tecnico;
+        $livroTecnico = new Tecnico;
+        $livroTecnico->setTitulo("Fundamentos html5 e CSS3");
+        $livroTecnico->setAutor("Maurício Samy Silva");
+        $livroTecnico->setPaginas(304);
+        $livroTecnico->setFormato(["Digital"]);
 
         $area = new Programacao;
         $area->setArea("Programação");
 
         $disciplina = new Didatico;
-        $nivel = new Didatico;
         $disciplina->setDisciplina("Front-End");
+        
+        $nivel = new Didatico;
 
     ?>
 
-<table border="1" style="border-collapse: collapse;">
+<table border="1" style="border-collapse: collapse; text-align: center;">
     <thead>
         <tr>
             <th>Livro</th>
@@ -45,10 +43,10 @@
     </thead>
     <tbody>
         <tr>
-           <td><?=$livro->getTitulo()?></td>
-           <td><?=$livro->getAutor()?></td>
-           <td><?=$livro->getPaginas()?></td>
-           <td><?=$formato->getFormato()[0]?></td>
+           <td><?=$livroTecnico->getTitulo()?></td>
+           <td><?=$livroTecnico->getAutor()?></td>
+           <td><?=$livroTecnico->getPaginas()?></td>
+           <td><?=$livroTecnico->getFormato()[0]?></td>
            <td><?=$area->getArea()?></td>
            <td><?=$disciplina->getDisciplina()?></td>
            <td><?=$nivel->getNivel()[1]?></td>
