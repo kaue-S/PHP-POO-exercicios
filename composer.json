@@ -1,0 +1,9 @@
+{
+    "name" : "kaue/php-poo-exercicios",
+    "description" : "Exercicio 03 utilizando namespace e autoload de classes",
+    "autoload" : {
+        "psr-4" : {
+            "Biblioteca\\" : "src/" 
+        }
+    }
+}

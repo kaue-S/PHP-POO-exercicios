@@ -1,5 +1,5 @@
 <?php
-
+namespace Biblioteca;
     class Livro {
         private string $titulo;
         private string $autor;

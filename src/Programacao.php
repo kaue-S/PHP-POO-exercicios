@@ -1,6 +1,5 @@
 <?php
-    require_once "src/Tecnico.php";
-
+    namespace Biblioteca;
     class Programacao extends Tecnico {
         private string $area;
 
