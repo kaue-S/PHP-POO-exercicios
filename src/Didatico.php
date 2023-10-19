@@ -1,6 +1,5 @@
 <?php
-    require_once "src/Tecnico.php";
-
+    namespace Biblioteca;
     class Didatico extends Tecnico {
         private string $disciplina;
         private array $nivel = ["básico", "médio", "superior"];

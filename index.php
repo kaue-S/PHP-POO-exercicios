@@ -7,11 +7,14 @@
 </head>
 <body>
 
-<h1>Exercicio 02 POO </h1>
+<h1>Exercicio 03 </h1>
     <?php
-        require_once "src/Tecnico.php";
-        require_once "src/Programacao.php";
-        require_once "src/Didatico.php";
+        use Biblioteca\Tecnico;
+        use Biblioteca\Didatico;
+        use Biblioteca\Programacao;
+        use Biblioteca\Web;
+
+        require_once "vendor/autoload.php";
 
         $livroTecnico = new Tecnico;
         $livroTecnico->setTitulo("Fundamentos html5 e CSS3");
@@ -43,6 +46,7 @@
     </thead>
     <tbody>
         <tr>
+           
            <td><?=$livroTecnico->getTitulo()?></td>
            <td><?=$livroTecnico->getAutor()?></td>
            <td><?=$livroTecnico->getPaginas()?></td>
@@ -55,6 +59,8 @@
 
         </tr>
     </tbody>
+
+    
 </table>
 </body>
 </html>
